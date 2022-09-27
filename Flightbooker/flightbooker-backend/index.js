@@ -1,3 +1,12 @@
+/*
+Execute to initialize:
+npm init
+(fill in data)
+
+npm install <module>
+Example: npm install express
+ */
+
 const express = require('express')
 const app = express()
 const port = 3000
