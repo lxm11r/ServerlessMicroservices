@@ -1,0 +1,3 @@
+/.idea/
+**/node_modules
+/Flightbooker/flightbooker-frontend/node_modules/
