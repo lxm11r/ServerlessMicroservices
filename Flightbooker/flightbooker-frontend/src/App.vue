@@ -11,11 +11,12 @@
     </div>
     <div>
       <Button @click="showModal" ></Button>
+      <div @click.native="getAllSeats"> message: {{this.message}} </div>
       <Modal v-show="isModalVisible"
       @close="closeModal" />
 
     </div>
-    <div @click="getAllSeats"> message: {{message}} </div>
+    
     
   </main>
 
@@ -29,7 +30,7 @@ import Button from './components/Button.vue';
 
 <script>
 import Modal from './components/Modal.vue';
-//import axios from "axios";
+import axios from "axios";
 import {getAllSeats, bookSeat} from './services/BookingService.js';
   export default { 
     components: {
@@ -38,7 +39,7 @@ import {getAllSeats, bookSeat} from './services/BookingService.js';
     data() {
       return{
         isModalVisible: false,
-        message: "",
+        message: [],
       };
     },
     methods: {
@@ -54,12 +55,15 @@ import {getAllSeats, bookSeat} from './services/BookingService.js';
           }
         });
         this.$store.dispatch('resetCount');
+        axios.post('/api/seat', this.$store.state.seatList);
       },
+
       getAllSeats() {
         getAllSeats().then(response => {
           console.log(response)
+          this.message= response
         })
-      }
+      },
 
     }
 
@@ -89,7 +93,7 @@ main {
   header .wrapper {
     display: flex;
     place-items: flex-start;
-    flex-wrap: wrap;
+    flex-wrap: wrap; 
   }
 }
 </style>

@@ -1,11 +1,13 @@
 import { createStore } from 'vuex';
+import axios from 'axios';
 
 // Create a new store instance.
 export const store= createStore({
   state: {
       selected: [],
       selectedCount: 0,
-      seatList: [
+      seatList: [],
+      /*seatList: [
         {name: "1A", status: "free"},
         {name: "1B", status: "free"},
         {name: "1C", status: "free"},
@@ -15,10 +17,16 @@ export const store= createStore({
         {name: "3A", status: "free"},
         {name: "3B", status: "free"},
         {name: "3C", status: "free"},
-      ]
+      ]*/
 
   },
   mutations: {
+    SET_SEATS(state, seats){
+      state.seatList= seats
+    },
+    BOOK_SEATS(state,seats){
+      state.seatList= seats
+    },
     ADD(state, payload){
       state.selected=payload;
     },
@@ -33,6 +41,18 @@ export const store= createStore({
     }
   },
   actions: {
+    getSeats({commit}){
+      axios.get('/api/seats')
+      .then(response => {
+        commit('SET_SEATS', response.data)
+      })
+    },
+    bookSeats({commit}, payload){
+      axios.post('api/seat', {payload})
+      .then(response => {
+        commit('BOOK_SEATS', response.data)
+      })
+    },
     add(context, payload){
       const selected = context.state.selected
       selected.push(payload)

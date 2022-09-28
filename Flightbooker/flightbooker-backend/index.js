@@ -12,11 +12,45 @@ const express = require('express');
 const app = express(),
     port = 3000;
 
-const seatList=[
+app.use(express.json());
+
+let seatList=[
     {
         "name": "1A",
         "status": "free",
-    }
+    },
+    {
+        "name": "1B",
+        "status": "free",
+    },
+    {
+        "name": "1C",
+        "status": "free",
+    },
+    {
+        "name": "2A",
+        "status": "free",
+    },
+    {
+        "name": "2B",
+        "status": "free",
+    },
+    {
+        "name": "2C",
+        "status": "free",
+    },
+    {
+        "name": "3A",
+        "status": "free",
+    },
+    {
+        "name": "3B",
+        "status": "free",
+    },
+    {
+        "name": "3C",
+        "status": "free",
+    },
 ]
 app.get('/api/seats', (req, res) => {
     //res.send('Here is a list of seats as JSON!!')
@@ -25,7 +59,10 @@ app.get('/api/seats', (req, res) => {
 })
 
 app.post('/api/seat', (req, res) => {
-    res.send('Seat booked!')
+    //res.send('Seat booked!')
+    console.log(req.body);
+    seatList=req.body
+    res.send(seatList)
 })
 
 app.listen(port, () => {
