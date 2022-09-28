@@ -15,6 +15,7 @@
       @close="closeModal" />
 
     </div>
+    <div @click="getAllSeats"> message: {{message}} </div>
     
   </main>
 
@@ -28,6 +29,8 @@ import Button from './components/Button.vue';
 
 <script>
 import Modal from './components/Modal.vue';
+//import axios from "axios";
+import {getAllSeats, bookSeat} from './services/BookingService.js';
   export default { 
     components: {
       Modal,
@@ -35,9 +38,9 @@ import Modal from './components/Modal.vue';
     data() {
       return{
         isModalVisible: false,
+        message: "",
       };
     },
-
     methods: {
       showModal() {
         this.isModalVisible=true;
@@ -52,6 +55,12 @@ import Modal from './components/Modal.vue';
         });
         this.$store.dispatch('resetCount');
       },
+      getAllSeats() {
+        getAllSeats().then(response => {
+          console.log(response)
+        })
+      }
+
     }
 
   }

@@ -7,15 +7,23 @@ npm install <module>
 Example: npm install express
  */
 
-const express = require('express')
-const app = express()
-const port = 3000
+const express = require('express');
+//const axios = require('axios');
+const app = express(),
+    port = 3000;
 
-app.get('/list-seats', (req, res) => {
-    res.send('Here is a list of seats as JSON')
+const seatList=[
+    {
+        "name": "1A",
+        "status": "free",
+    }
+]
+app.get('/api/seats', (req, res) => {
+    //res.send('Here is a list of seats as JSON!!')
+    res.send(seatList)
 })
 
-app.post('/book-seat', (req, res) => {
+app.post('/api/seat', (req, res) => {
     res.send('Seat booked!')
 })
 
