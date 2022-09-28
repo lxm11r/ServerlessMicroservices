@@ -20,6 +20,7 @@ const seatList=[
 ]
 app.get('/api/seats', (req, res) => {
     //res.send('Here is a list of seats as JSON!!')
+    res.set("Access-Control-Allow-Origin", "*")
     res.send(seatList)
 })
 
