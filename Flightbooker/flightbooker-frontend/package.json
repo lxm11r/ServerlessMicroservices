@@ -2,6 +2,7 @@
   "name": "hello-world",
   "version": "0.0.0",
   "scripts": {
+    "serve": "vue-cli-service serve",
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview --port 4173"
@@ -13,6 +14,7 @@
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^3.0.3",
+    "@vue/cli-service": "~4.5.0",
     "vite": "^3.0.9"
   }
 }
