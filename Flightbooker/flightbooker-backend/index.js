@@ -15,7 +15,46 @@ port = 3000;
 
 app.use(express.json());
 
-let seatList = [
+const unmodifiedSeatList = [
+    {
+        "name": "1A",
+        "status": "free",
+    },
+    {
+        "name": "1B",
+        "status": "free",
+    },
+    {
+        "name": "1C",
+        "status": "free",
+    },
+    {
+        "name": "2A",
+        "status": "free",
+    },
+    {
+        "name": "2B",
+        "status": "free",
+    },
+    {
+        "name": "2C",
+        "status": "free",
+    },
+    {
+        "name": "3A",
+        "status": "free",
+    },
+    {
+        "name": "3B",
+        "status": "free",
+    },
+    {
+        "name": "3C",
+        "status": "free",
+    },
+]
+
+var seatList = [
     {
         "name": "1A",
         "status": "free",
@@ -60,6 +99,11 @@ app.get('/api/seats', (req, res) => {
 app.post('/api/seat', (req, res) => {
     console.log(req.body);
     seatList = req.body
+    res.send(seatList)
+})
+
+app.get('/api/reset', (req, res) => {
+    seatList = unmodifiedSeatList
     res.send(seatList)
 })
 
