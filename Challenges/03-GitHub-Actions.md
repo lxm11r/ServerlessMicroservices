@@ -4,7 +4,8 @@
 
 ## Introduction
 
-Our application is now running on Azure, which is great, but we can still use some tools to optimize it. First thing is to automate the deployment via Github actions.
+Our application is now running on Azure, which is great, but we can still use some tools to optimize it.
+So far if we'd make any changes to the source code we would have to build the application locally, create a new image, push it to the Container Registry and creating a Revision of the subject Container App manually. To enhance this process we can use GitHub Actions to automate the build and deploy process.<br>
 GitHub Actions is designed to help simplify workflows with flexible automation and offer easy-to-use CI/CD capabilities. Building a workflow pipeline with GitHub Actions will make the deployment more efficient and it's possible to automate everything within the GitHub repositories. 
 
 ## Challenge
@@ -14,10 +15,12 @@ GitHub Actions is designed to help simplify workflows with flexible automation a
 
 ## Success Criteria
 
-* Merges to the code automatically trigger the build pipeline
+* Pushing a commit to the GitHub repository automatically trigger the GitHub actions build pipeline
 * New builds are pushed directly to the ACR
 * New versions on ACR trigger a run of the release pipeline
 * Triggered Workflows can be followed in the live logs.
+
+![GitHub Actions](../Images/github-actions.png)
 
 ## Learning Resources
 * [GitHub Actions](https://resources.github.com/devops/tools/automation/actions/)
