@@ -1,6 +1,6 @@
 # Challenge 1: Build and push Microservice Images locally
 
-[Previous Challenge] (./00-Getting-started.md) - **[Home](../README.md)** - **[Next Challenge](./02-Azure-Container-Apps.md)**
+[Previous Challenge](./00-Getting-started.md) - **[Home](../README.md)** - **[Next Challenge](./02-Azure-Container-Apps.md)**
 
 ## Introduction
 
