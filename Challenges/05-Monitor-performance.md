@@ -6,6 +6,8 @@ So far we implemented Front Door to our error-free application. That's nice but 
 
 ## Challenge
 
+* Coming soon!
+
 ## Success Criteria
 
 ## Learning Resources
