@@ -55,7 +55,7 @@ import {getAllSeats, bookSeat} from './services/BookingService.js';
           }
         });
         this.$store.dispatch('resetCount');
-        axios.post('/api/seat', this.$store.state.seatList);
+        bookSeat(this.$store.state.seatList);
       },
 
       getAllSeats() {

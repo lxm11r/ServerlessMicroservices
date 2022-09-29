@@ -1,5 +1,6 @@
 import { createStore } from 'vuex';
 import axios from 'axios';
+import {getAllSeats, bookSeat} from "@/services/BookingService";
 
 // Create a new store instance.
 export const store= createStore({
@@ -42,15 +43,15 @@ export const store= createStore({
   },
   actions: {
     getSeats({commit}){
-      axios.get('/api/seats')
-      .then(response => {
-        commit('SET_SEATS', response.data)
+      getAllSeats()
+      .then(seats => {
+        commit('SET_SEATS', seats)
       })
     },
     bookSeats({commit}, payload){
-      axios.post('api/seat', {payload})
-      .then(response => {
-        commit('BOOK_SEATS', response.data)
+      bookSeat({payload})
+      .then(seats => {
+        commit('BOOK_SEATS', seats)
       })
     },
     add(context, payload){
