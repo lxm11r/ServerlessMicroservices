@@ -40,16 +40,21 @@ After deployment you can copy the Application URL (FQDN) of the frontend contain
 
 ## Task 3: Setup basic Security
 
-## Task 4: Activate dapr in your Container Apps
+If you set up the backend ingress to "internal", it won't be reachable from the public internet but only from applications deployed within your Azure Container Environment.
+
+## Task 4: Try dapr locally
 
 Dapr is already integrated in the FLightbooker App. To see if it runs on your local machine you first need to install the Dapr CLI. <br>
 Open the PowerShell console as an administrator and run the following command: <br>
 `powershell -Command "iwr -useb https://raw.githubusercontent.com/dapr/cli/master/install/install.ps1 | iex"`
 <br>
-Verify that the dapr CLI is installed by restarting the PowerShell console and run the following command: `dapr`
-To initialize dapr run `dapr init`on the PowerShell console as administrator.
+Verify that the dapr CLI is installed by restarting the PowerShell console and run the following command:<br> `dapr` <br>
+To initialize dapr run <br>
+`dapr init` <br>
+on the PowerShell console as administrator.
 After that you can use the start_frontend and start_backend script in the repository to start your back- and frontend with dapr. 
-<br>
+
+## Task 5: Activate dapr in your Container Apps
 Now back to azure: <br>
 So far dapr was not enabled on the Azure Container Apps we provisioned. You can check this in the Portal and it should look something like this: 
 ![dapr-disabled](../Images/dapr-disabled.png)
@@ -67,5 +72,5 @@ az containerapp dapr enable --name "flightbooker-frontend" `
   --dapr-app-id "flightbooker-frontend" `
   --dapr-app-port 5173
 ```
-
+For more dapr configurations look [here](https://learn.microsoft.com/en-us/azure/container-apps/dapr-overview?tabs=bicep1%2Cyaml).
 With this you should be able to access the Frontend Web App and call the backend API app using dapr.
