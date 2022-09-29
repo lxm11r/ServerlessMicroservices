@@ -23,6 +23,8 @@ We also want to enable dapr in our Azure Container Apps, so we can use it for Se
 * The frontend is accessible under public DNS and/or IP
 * If you choose and book seats you'll get a confirmation and seats are no longer available
 * Backend is not reachable publicly
+* App runs locally with dapr
+* App runs in Container Apps with dapr
 
 #### Learning Resources
 * [Benefits of Container Apps](https://docs.microsoft.com/en-us/azure/container-apps/compare-options)
