@@ -11,7 +11,7 @@
     </div>
     <div>
       <Button @click="showModal" ></Button>
-      <div @click.native="getAllSeats"> message: {{this.message}} </div>
+      <!--<div @click.native="getAllSeats"> message: {{this.message}} </div> -->
       <Modal v-show="isModalVisible"
       @close="closeModal" />
 
