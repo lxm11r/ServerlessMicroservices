@@ -1,6 +1,6 @@
 # Challenge 2: Deploy Microservices to Azure Container Apps
 
-[Previous Challenge] (./00-Getting-started.md) - **[Home](../README.md)** - **[Next Challenge](./03-GitHub-Actions.md)**
+[Previous Challenge](./00-Getting-started.md) - **[Home](../README.md)** - **[Next Challenge](./03-GitHub-Actions.md)**
 
 ## Introduction
 
