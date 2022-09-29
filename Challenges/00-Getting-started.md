@@ -92,5 +92,4 @@ az provider register --namespace Microsoft.OperationalInsights
 * [Microservices with Azure Container Apps](https://docs.microsoft.com/en-us/azure/container-apps/microservices)
 * [Container Registry](https://docs.microsoft.com/en-us/azure/container-registry/container-registry-get-started-azure-cli)
 * [Container App Environment](https://docs.microsoft.com/en-us/azure/container-apps/environment)
-* [Cosmos DB](https://learn.microsoft.com/en-us/azure/cosmos-db/sql/create-cosmosdb-resources-portal)
 
