@@ -15,7 +15,7 @@ In this hack you will learn how to set up a whole microservice architecture in a
 
 ## Content and Challenges
 
-* Getting started and setting up the environment
+* Challenge 0: [Getting started and setting up the environment](ServerlessMicroservices/Challenges/Challenge0.d)
 * Build and push Microservice Images locally
 * Deploy Microservices to Azure Container App
 * Deploy Microservices to Azure Container App via GitHub Actions
