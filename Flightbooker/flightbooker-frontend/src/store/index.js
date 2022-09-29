@@ -1,5 +1,4 @@
 import { createStore } from 'vuex';
-import axios from 'axios';
 import {getAllSeats, bookSeat} from "@/services/BookingService";
 
 // Create a new store instance.
@@ -8,17 +7,6 @@ export const store= createStore({
       selected: [],
       selectedCount: 0,
       seatList: [],
-      /*seatList: [
-        {name: "1A", status: "free"},
-        {name: "1B", status: "free"},
-        {name: "1C", status: "free"},
-        {name: "2A", status: "free"},
-        {name: "2B", status: "free"},
-        {name: "2C", status: "free"},
-        {name: "3A", status: "free"},
-        {name: "3B", status: "free"},
-        {name: "3C", status: "free"},
-      ]*/
 
   },
   mutations: {

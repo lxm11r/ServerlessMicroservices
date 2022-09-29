@@ -1,11 +1,5 @@
 <template>  
     <div class="container">
-      <!--<Seat 
-      v-for="seat in $store.state.seatList"
-      :seat ="seat"
-      :key ="seat.name"
-      >
-    </Seat>-->
     <Seat
     v-for="seat in seatList"
     :seat ="seat"
@@ -30,7 +24,7 @@ import Seat from './Seat.vue';
       }
     },
     mounted(){
-      this.$store.dispatch("getSeats");
+      this.$store.dispatch("getSeats"); 
     }
   }
   </script>

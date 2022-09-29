@@ -4,7 +4,10 @@ npm init
 (fill in data)
 
 npm install <module>
-Example: npm install express
+for this: 
+npm install
+npm install express
+npm install cors
  */
 
 const express = require('express');
@@ -54,7 +57,7 @@ const unmodifiedSeatList = [
     },
 ]
 
-var seatList = [
+let seatList = [
     {
         "name": "1A", 
         "status": "free",
@@ -98,7 +101,7 @@ app.get('/api/seats', (req, res) => {
 
 app.post('/api/seat', (req, res) => {
     console.log(req.body);
-    seatList = req.body
+    seatList = req.body["seat"];
     res.send(seatList)
 })
 

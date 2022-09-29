@@ -37,14 +37,12 @@
           this.seat.status = 'selected';
           this.$store.dispatch('count', 1);
           this.$store.dispatch('add', this.seat.name);
-          console.log(this.$store.state.seatList[3]); //delete later
           bookSeat(this.$store.state.seatList)
         }
         else if (this.seat.status =='selected'){
           this.seat.status = 'free';
           this.$store.dispatch('count', -1);
           this.$store.dispatch('remove', this.seat.name);
-          console.log(this.$store.state.seatList[3]); //delete later
           bookSeat(this.$store.state.seatList)
         }
       },
