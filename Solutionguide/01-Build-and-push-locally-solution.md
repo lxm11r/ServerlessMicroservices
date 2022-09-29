@@ -1,6 +1,6 @@
 # Challenge 1: Build and push Microservice Images locally
 
-[Previous Challange Solution](./00-Getting-started-solution.md) - **[Home](../README.md)** - [Next Challenge Solution](./02-Azure-Container-Apps.md)
+[Previous Challange Solution](./00-Getting-started-solution.md) - **[Home](../README.md)** - [Next Challenge Solution](./02-Azure-Container-Apps-solution.md)
 
 ## Task 1: Clone the FlightBooker Folder from this Repository
 If you are using VS Code make sure you are connected to your gitHub account.
