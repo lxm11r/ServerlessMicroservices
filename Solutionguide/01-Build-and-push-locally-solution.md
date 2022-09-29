@@ -1,5 +1,7 @@
 # Challenge 1: Build and push Microservice Images locally
 
+[Previous Challange Solution](./00-Getting-started-solution.md) - **[Home](../README.md)** - [Next Challenge Solution](./01-Build-and-push-locally-solution.md)
+
 ## Task 1: Clone the FlightBooker Folder from this Repository
 If you are using VS Code make sure you are connected to your gitHub account.
 Then you can use the terminal to clone the folder: 

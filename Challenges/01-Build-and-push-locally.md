@@ -5,7 +5,7 @@
 ## Introduction
 
 In this Repository we have provided the code for the example application for an airline booking service as described in [Challenge 0](./00-Getting-started.md).
-To later be able to deploy them in Container Apps we first have to build Images of each microservice via docker and push them to our Azure Container Registry.
+To later be able to deploy them in Container Apps we first have to build images of each microservice via docker and push them to our Azure Container Registry.
 
 ## Challenge
 
@@ -20,4 +20,4 @@ To later be able to deploy them in Container Apps we first have to build Images 
 * Images can be pulled from the ACR
 
 ## Learning Resources
-* Push to Container Registries: https://docs.microsoft.com/en-us/azure/container-registry/container-registry-get-started-docker-cli?tabs=azure-cli 
+* [Push to Container Registries](https://docs.microsoft.com/en-us/azure/container-registry/container-registry-get-started-docker-cli?tabs=azure-cli)

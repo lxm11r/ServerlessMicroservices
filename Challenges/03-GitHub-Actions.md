@@ -20,5 +20,5 @@ GitHub Actions is designed to help simplify workflows with flexible automation a
 * Triggered Workflows can be followed in the live logs.
 
 ## Learning Resources
-* GitHub Actions: https://resources.github.com/devops/tools/automation/actions/
-* CI/CD pipeline with GitHub Actions: https://github.blog/2022-02-02-build-ci-cd-pipeline-github-actions-four-steps/ 
+* [GitHub Actions](https://resources.github.com/devops/tools/automation/actions/)
+* [CI/CD pipeline with GitHub Actions](https://github.blog/2022-02-02-build-ci-cd-pipeline-github-actions-four-steps/)

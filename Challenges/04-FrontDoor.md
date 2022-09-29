@@ -17,6 +17,6 @@ To be able to use the full potential of Azure for our new application, we want t
 * Logs can be read
 
 ## Learning Resources
-* Azure Front Door: https://learn.microsoft.com/en-us/azure/frontdoor/front-door-overview 
-* Azure Front Door (classic): https://learn.microsoft.com/en-us/azure/frontdoor/classic-overview 
-* Implementing Front Door: https://learn.microsoft.com/en-us/azure/frontdoor/quickstart-create-front-door 
+* [Azure Front Door](https://learn.microsoft.com/en-us/azure/frontdoor/front-door-overview)
+* [Azure Front Door (classic)](https://learn.microsoft.com/en-us/azure/frontdoor/classic-overview)
+* [Implementing Front Door](https://learn.microsoft.com/en-us/azure/frontdoor/quickstart-create-front-door)
