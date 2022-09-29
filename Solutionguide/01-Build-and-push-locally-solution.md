@@ -14,7 +14,7 @@ git checkout REMOTE_NAME/BRANCH -- path/to/directory
 ```
 You can check if the services run locally on you Computer. Therefor in a terminal direct to the folder of the frontend and run `npm install`. In a second terminal go to the folder of the backend and do the same. After that you should be able to run `npm run dev` on both terminals and open the application in your localhost. 
 
-idk
+
 
 ## Task 2: Create Docker images of the microservices
 
@@ -38,4 +38,3 @@ az acr run --registry $CONTAINER_REGISTRY `
 --cmd '$REGISTRY/$PATH' /dev/null
 ```
 
-## Task 4: Bookings are stored in DB
