@@ -25,6 +25,6 @@ We also want to enable Dapr in our Azure Container Apps, so we can use it for Se
 * Backend is not reachable publicly
 
 #### Learning Resources
-* Benefits of Container Apps: https://docs.microsoft.com/en-us/azure/container-apps/compare-options 
-* dapr: https://docs.dapr.io/concepts/overview/ 
-* dapr Service Invocation: https://learn.microsoft.com/en-us/dotnet/architecture/dapr-for-net-developers/service-invocation
+* [Benefits of Container Apps](https://docs.microsoft.com/en-us/azure/container-apps/compare-options)
+* [dapr](https://docs.dapr.io/concepts/overview/)
+* [dapr Service Invocation](https://learn.microsoft.com/en-us/dotnet/architecture/dapr-for-net-developers/service-invocation)
