@@ -9,15 +9,17 @@ So far if we'd make any changes to the source code we would have to build the ap
 GitHub Actions is designed to help simplify workflows with flexible automation and offer easy-to-use CI/CD capabilities. Building a workflow pipeline with GitHub Actions will make the deployment more efficient and it's possible to automate everything within the GitHub repositories. 
 
 ## Challenge
-
-* Create a build pipeline for the services that creates an Image of your code and pushes it to the ACR whenever there is a new merge. Basically automate what you've done  in Challenge 1.
-* Create a release pipeline for our application that runs tests, enforces lint and  deploys the app to the production environment, automating what you've done manually in Challenge 2.
+* Configure GitHub actions to connect to Azure
+* Add Action Secrets to GitHub Repository
+* Create a build pipeline for frontend and backend that creates an Image of your code and pushes it to the ACR whenever there is a new commit pushed. Basically automate what you've done  in Challenge 1.
+* Create a deploy pipeline for frontend and backend that deploys the app to the production environment, automating what you've done manually in Challenge 2.
 
 ## Success Criteria
-
+* GitHub actions is connected to Azure
+* Credentials created for Azure
+* Credentials created for Azure Container Registry
 * Pushing a commit to the GitHub repository automatically trigger the GitHub actions build pipeline
-* New builds are pushed directly to the ACR
-* New versions on ACR trigger a run of the release pipeline
+* New builds are pushed to the ACR and deployed to Container Apps automatically
 * Triggered Workflows can be followed in the live logs.
 
 ![GitHub Actions](../Images/github-actions.png)
