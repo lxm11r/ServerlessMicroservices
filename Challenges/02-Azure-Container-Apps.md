@@ -5,7 +5,8 @@
 ## Introduction
 
 Since our images are now push- and pullable from our registry and the environment is set up, we can deploy our microservices to Azure. As described in the intro, we will be using Azure Container Apps. The Azure Container Apps service enables you to run microservices and containerized applications on a serverless platform. With Container Apps, you enjoy the benefits of running containers while you leave behind the concerns of manually configuring cloud infrastructure and complex container orchestrators.
-We also want to enable Dapr in our Azure Container Apps, so we can use it for Service to Service invocation between Frontend and Backend, State Store Managment of the Database and Pub/Sub between the publishing Web API-Backend and the subscribing Processor Backend.
+We also want to enable Dapr in our Azure Container Apps, so we can use it for Service to Service invocation between Frontend and Backend. dapr can solve the challenges of where the other services are located, how to call a service securely and how to handle retries in distributed applications by functioning as a reverse proxy.
+![dapr service invocation example](../Images/dapr-service-invocation.png)
 
 ## Challenge
 
@@ -13,16 +14,17 @@ We also want to enable Dapr in our Azure Container Apps, so we can use it for Se
 * West Europe as region
 * Part of our Container App environment
 * Images are pulled from the ACR
-* Basic Security is set up (?)
+* Basic Security is set up
+* Activate dapr in Container Apps
 
 ## Success Criteria
 
 * All Services are deployed in the environment
 * The frontend is accessible under public DNS and/or IP
-* If you choose and book seats you'll get a confirmation: <<image>>
-* Booked seats are saved in the database
+* If you choose and book seats you'll get a confirmation and seats are no longer available
 * Backend is not reachable publicly
 
 #### Learning Resources
 * Benefits of Container Apps: https://docs.microsoft.com/en-us/azure/container-apps/compare-options 
 * dapr: https://docs.dapr.io/concepts/overview/ 
+* dapr Service Invocation: https://learn.microsoft.com/en-us/dotnet/architecture/dapr-for-net-developers/service-invocation

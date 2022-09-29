@@ -5,14 +5,13 @@
 ## Introduction
 
 In this Repository we have provided the code for the example application for an airline booking service as described in [Challenge 0](./00-Getting-started.md).
-To later be able to deploy them in Container Apps we first have to build Images of each microservice via docker.
+To later be able to deploy them in Container Apps we first have to build Images of each microservice via docker and push them to our Azure Container Registry.
 
 ## Challenge
 
 * Clone repository
 * Create docker images of the microservices
 * Push the images to your ACR
-* Bookings are stored in database (?)
 
 ## Success Criteria
 
