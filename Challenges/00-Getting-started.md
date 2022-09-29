@@ -1,6 +1,6 @@
 # Challenge 0: Getting started and setting up the environment
 
-**[Home](../readme.md)** - [Challenge One](./01-Build-and-push-Microservice-Images-locally.md)
+**[Home](../README.md)** - [Challenge One](./01-Build-and-push-Microservice-Images-locally.md)
 
 ## Introduction
 
