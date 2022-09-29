@@ -1,6 +1,6 @@
 # Challenge 2: Deploy Microservices to Azure Container App
 
-[Previous Challenge Solution](01-Build-and-push-locally-solution.md)**[Home](../README.md)** - [Next Challenge Solution](03-GitHub-Actions-solution.md)
+[Previous Challenge Solution](01-Build-and-push-locally-solution.md) - **[Home](../README.md)** - [Next Challenge Solution](03-GitHub-Actions-solution.md)
 
 ## Task 1: Create Container Apps for each microservice with the images from the ACR
 
