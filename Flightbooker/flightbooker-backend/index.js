@@ -16,7 +16,7 @@ app.use(express.json());
 
 let seatList=[
     {
-        "name": "1A",
+        "name": "1A", 
         "status": "free",
     },
     {
