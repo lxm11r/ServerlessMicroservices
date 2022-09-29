@@ -33,12 +33,12 @@ In this hack you will learn how to set up a whole microservice architecture in a
 
 ## Solution Guide
 
-* Challenge 0: [Getting started and setting up the environment](./Challenges/00-Getting-started-solution.md)
-* Challenge 1: [Build and push Microservice Images locally](./Challenges/01-Build-and-push-locally-solution.md)
-* Challenge 2: [Deploy Microservices to Azure Container App](./Challenges/02-Azure-Container-Apps-solution.md)
-* Challenge 3: [Deploy Microservices to Azure Container App via GitHub Actions](./Challenges/03-GitHub-Actions-solution.md)
-* Challenge 4: [Integrate Azure Front Door](./Challenges/04-FrontDoor-solution.md)
-* Challenge 5: [Monitor performance with Azure Front Door](./Challenges/05-Monitor-performance-solution.md)
+* Challenge 0: [Getting started and setting up the environment](./Solutionguide/00-Getting-started-solution.md)
+* Challenge 1: [Build and push Microservice Images locally](./Solutionguide/01-Build-and-push-locally-solution.md)
+* Challenge 2: [Deploy Microservices to Azure Container App](./Solutionguide/02-Azure-Container-Apps-solution.md)
+* Challenge 3: [Deploy Microservices to Azure Container App via GitHub Actions](./Solutionguide/03-GitHub-Actions-solution.md)
+* Challenge 4: [Integrate Azure Front Door](./Solutionguide/04-FrontDoor-solution.md)
+* Challenge 5: [Monitor performance with Azure Front Door](./Solutionguide/05-Monitor-performance-solution.md)
 
 ## Contributor
 
