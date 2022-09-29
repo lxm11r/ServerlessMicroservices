@@ -35,11 +35,7 @@ Customers can click on their preferred amount and location of seats and book the
 
 * Azure Container Apps is a fully managed, serverless container service used to build and deploy modern apps at scale. The underlying Service is Azure Kubernetes which provides you with the needed infrastructure. In this solution, you're hosting all microservices on Azure Container Apps and deploying them into a single Container App environment. This environment acts as a secure boundary around the system.
 
-* Dapr provides a set of APIs that simplify the authoring of microservice applications. Once you enable Dapr in Azure Container Apps, it exposes its APIs via a sidecar. Use it for Service to Service invocation between Frontend and Backend, State Managment and Pub/Sub.
-
-* Azure Service Bus is a fully managed enterprise message broker complete with queues and publish-subscribe topics. In this solution, use it for the Dapr pub/sub component implementation. The Web API publishes messages on the bus, and the Processor Backend subscribes to these messages and sends the bills out to customers.
-
-* Azure Cosmos DB is a NoSQL, multi-model managed database service. Use it as a Dapr state store component for the Web API Backend.
+* dapr provides a set of APIs that simplify the authoring of microservice applications. Once you enable dapr in Azure Container Apps, it exposes its APIs via a sidecar that works as a reverse proxy for the service. Here we use it for service to service invocation between frontend and backend.
 
 * Azure Front Door is an application delivery network as a service that offers dynamic site accerleration as well as global load balancing with near real-time failover.
 It also works as a global, scalable entry-point to protect and decouple the inner structure from incoming traffic.
@@ -78,9 +74,9 @@ az provider register --namespace Microsoft.OperationalInsights
 
 #### Challenge
 
-* Use coherent Naming conventions for resources
+* Use coherent naming conventions for resources
 * Set up an Azure Container registry with admin account
-* Create a Container App environment for multiple container apps in West Europe Region
+* Create a Container App environment for multiple container apps in West Europe region
 * Basic permission concept for accessing resources
 
 #### Success Criteria
@@ -92,9 +88,9 @@ az provider register --namespace Microsoft.OperationalInsights
 
 #### Learning Resources
 
-* Microservices with Container Apps and Dapr: https://docs.microsoft.com/en-us/azure/architecture/example-scenario/serverless/microservices-with-container-apps-dapr
-* Microservices with Azure Container Apps: https://docs.microsoft.com/en-us/azure/container-apps/microservices
-* Container Registry: https://docs.microsoft.com/en-us/azure/container-registry/container-registry-get-started-azure-cli
-* Container App Environment: https://docs.microsoft.com/en-us/azure/container-apps/environment 
-* Cosmos DB: https://learn.microsoft.com/en-us/azure/cosmos-db/sql/create-cosmosdb-resources-portal 
+* [Microservices with Container Apps and Dapr](https://docs.microsoft.com/en-us/azure/architecture/example-scenario/serverless/microservices-with-container-apps-dapr)
+* [Microservices with Azure Container Apps](https://docs.microsoft.com/en-us/azure/container-apps/microservices)
+* [Container Registry](https://docs.microsoft.com/en-us/azure/container-registry/container-registry-get-started-azure-cli)
+* [Container App Environment](https://docs.microsoft.com/en-us/azure/container-apps/environment)
+* [Cosmos DB](https://learn.microsoft.com/en-us/azure/cosmos-db/sql/create-cosmosdb-resources-portal)
 
