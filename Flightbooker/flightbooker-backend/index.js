@@ -56,7 +56,7 @@ const unmodifiedSeatList = [
 
 var seatList = [
     {
-        "name": "1A",
+        "name": "1A", 
         "status": "free",
     },
     {
@@ -110,3 +110,4 @@ app.get('/api/reset', (req, res) => {
 app.listen(port, () => {
     console.log(`Example app listening on port ${port}`)
 })
+
