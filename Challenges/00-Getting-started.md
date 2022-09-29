@@ -17,7 +17,7 @@ Real world scenarios can include up to hundreds of microservices within an envir
 
 Below you can find the architecture diagram of the application we are going to build:
 
-![Serverless Architecture](../Images/serverless-architecture.png)
+![Serverless Architecture](../Images/serverless-architectur-reduced.png)
 
 * Web App front-end application shows users the available seats for the airline and lets them choose their preferred seats:
 ![Frontend Flightbooker](../Images/flightbooker-frontend.png)
@@ -25,10 +25,7 @@ Below you can find the architecture diagram of the application we are going to b
 Customers can click on their preferred amount and location of seats and book them with the "book" Button. The front-end will show an order confirmation and the booked seats will no longer be available for booking: 
 ![Booking Receipt](../Images/booking-receipt.png)
 
-* Backend Web API which contains the business logic of bookings management service and data storage. It stores the seats in a database and carries out the booking process by assigning the status to the chosen seats. 
-
-* Event-driven backend processor which is responsible for sending the bills to customers based on the messages that are coming from the Service Bus. It is subscribed to the Backend Web API and will send out the booking confirmation to be shown in the front-end when a booking has taken place.
-
+* Backend Web API which contains the business logic of bookings management service and data storage. It stores the seats and carries out the booking process by assigning the status to the chosen seats. 
 
 #### Components
 
@@ -84,8 +81,6 @@ az provider register --namespace Microsoft.OperationalInsights
 * Use coherent Naming conventions for resources
 * Set up an Azure Container registry with admin account
 * Create a Container App environment for multiple container apps in West Europe Region
-* Key-Value Store
-* Create a Cosmos-DB Database for (?) API
 * Basic permission concept for accessing resources
 
 #### Success Criteria
@@ -93,8 +88,6 @@ az provider register --namespace Microsoft.OperationalInsights
 * Naming convention defined
 * Azure container registry is deployed and accessable
 * App environment is present
-* Key-value store deployed
-* Database deployed
 * Permission concept is created
 
 #### Learning Resources
