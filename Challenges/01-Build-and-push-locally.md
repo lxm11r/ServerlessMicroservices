@@ -4,13 +4,12 @@
 
 ## Introduction
 
-In this Repository we have provided the code for the example application for an airline booking service as described in Challenge 0. <<link>>
-To later be able to deploy them in Container Apps we first have to build Images of each microservice via docker. 
-APIs are an important part of communication between the microservices. If you want to challenge yourself a little more, you are free to code them yourself, otherwise they are also provided in this repository.
+In this Repository we have provided the code for the example application for an airline booking service as described in [Challenge 0](./00-Getting-started.md).
+To later be able to deploy them in Container Apps we first have to build Images of each microservice via docker.
 
 ## Challenge
 
-* Optionally: Communication between frontend and backend
+* Clone repository
 * Create docker images of the microservices
 * Push the images to your ACR
 * Bookings are stored in database (?)
