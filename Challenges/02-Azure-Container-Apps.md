@@ -1,5 +1,7 @@
 # Challenge 2: Deploy Microservices to Azure Container Apps
 
+[Previous Challenge] (./00-Getting-started.md) - **[Home](../README.md)** - **[Next Challenge](./03-GitHub-Actions.md)**
+
 ## Introduction
 
 Since our images are now push- and pullable from our registry and the environment is set up, we can deploy our microservices to Azure. As described in the intro, we will be using Azure Container Apps. The Azure Container Apps service enables you to run microservices and containerized applications on a serverless platform. With Container Apps, you enjoy the benefits of running containers while you leave behind the concerns of manually configuring cloud infrastructure and complex container orchestrators.
