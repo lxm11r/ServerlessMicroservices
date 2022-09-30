@@ -65,12 +65,12 @@ To enable dapr for both Apps, run the following commands:
 az containerapp dapr enable --name "flightbooker-backend" `
   --resource-group $RESOURCE_GROUP`
   --dapr-app-id "flightbooker-backend"`
-  --dapr-app-port 3000
+  --dapr-app-port 3501
 
 az containerapp dapr enable --name "flightbooker-frontend" `
   --resource-group $RESOURCE_GROUP`
   --dapr-app-id "flightbooker-frontend" `
-  --dapr-app-port 5173
+  --dapr-app-port 3501
 ```
 For more dapr configurations look [here](https://learn.microsoft.com/en-us/azure/container-apps/dapr-overview?tabs=bicep1%2Cyaml).
 With this you should be able to access the Frontend Web App and call the backend API app using dapr.
