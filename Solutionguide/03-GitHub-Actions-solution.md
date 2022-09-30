@@ -12,7 +12,7 @@ az ad sp create-for-rbac `
   --scopes "/subscriptions/$SUBSCRIPTION_ID/resourceGroups/$RESOURCE_GROUP" `
   --sdk-auth
 ```
-For $SUBSCRIPTION_ID and $RESOURCE_GROUP use your respectable onese. 
+For $SUBSCRIPTION_ID and $RESOURCE_GROUP use your respectable ones. 
 Copy the JSON output for the next step.
 
 ## Task 2: Create credentials for Azure
@@ -24,7 +24,7 @@ Name it for example "FLIGHTBOOKER_AZURE_CREDENTIALS" and paste the copied JSON.
 
 To be able to build, push and pull images with GitHub actions you will also need a secret for the ACR username and passwod.
 
-To get the username and password use the following command or look it up in the Azure Portal: <br <
+To get the username and password use the following command or look it up in the Azure Portal: <br>
 `az acr credentials show -n $ACR-NAME`
 <br>
 
