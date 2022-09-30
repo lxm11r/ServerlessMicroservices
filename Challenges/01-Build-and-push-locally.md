@@ -9,7 +9,7 @@ To later be able to deploy them in Container Apps we first have to build images 
 
 ## Challenge
 
-* Clone repository
+* Clone subdirectory Flightbooker and push into personal repository
 * Create docker images of the microservices
 * Push the images to your ACR
 
