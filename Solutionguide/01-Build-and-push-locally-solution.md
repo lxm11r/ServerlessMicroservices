@@ -12,7 +12,7 @@ git remote add [REMOTE_NAME] [GIT_URL]
 git fetch REMOTE_NAME
 git checkout REMOTE_NAME/BRANCH -- path/to/directory
 ```
-You can check if the services run locally on you Computer. Therefor in a terminal direct to the folder of the frontend and run `npm install`. In a second terminal go to the folder of the backend and do the same. After that you should be able to run `npm run dev` on both terminals and open the application in your localhost. 
+You can check if the services run locally on you Computer. Therefor in a terminal direct to the folder of the frontend and run `npm install`. In a second terminal go to the folder of the backend and do the same. After that you should be able to run `npm run dev` on both terminals and open the application in your localhost. Ideally push the Flightbooker into a personal repository as you are going to need it for making changes and using gitHub Actions later.
 
 
 
