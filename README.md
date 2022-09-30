@@ -28,7 +28,7 @@ In this hack you will learn how to set up a whole microservice architecture in a
 * Azure CLI
 * Resource Group with contributor rights
 * GitHub with GitHub Actions
-* Docker
+* Docker [(with WSL2 backend)](https://docs.docker.com/desktop/windows/wsl/)
 
 ## Solution Guide
 
