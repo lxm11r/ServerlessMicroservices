@@ -11,7 +11,6 @@ To be able to use the full potential of Azure for our new application, we want t
 ## Challenge
 
 * Add Azure Front Door to your platform
-* Add Access restriction so your web app will only be available through Front Door
 * Use Azure for monitoring Access reports
 * Use Azure Front Door to monitor Metrics
 * Use Azure Front Door to monitor protocols
@@ -19,7 +18,7 @@ To be able to use the full potential of Azure for our new application, we want t
 ## Success Criteria
 
 * Front Door used in the environment
-* Frontend Accesss through public internet not possible 
+* Frontend Accesss through Front Door url  
 * Reports for "Traffic by Domain" within the last week available
 * Metrics available
 * FrontDoorAccessLog, FrontDoorHealthProbeLog and FrontDoorApplicationFirewallLog accessable
