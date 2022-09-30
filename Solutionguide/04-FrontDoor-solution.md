@@ -5,12 +5,6 @@
 
 A quickstart for setting up Azure Front Door with Azure Portal, CLI, PowerShell or Bicep for your App Service you can find [here](https://learn.microsoft.com/en-us/azure/frontdoor/create-front-door-portal) under the "Create a Front Door for your application" section.
 
-## Task 2: Add Access Restriction
-
-[Secure your Origin with Private Link](https://learn.microsoft.com/en-us/azure/frontdoor/private-link) <br>
-
-[Permit access only from Azure Front Door to Backend](https://techcommunity.microsoft.com/t5/azure-architecture-blog/permit-access-only-from-azure-front-door-to-azure-app-service-as/ba-p/2000173)
-
 ## Task 2: Monitor your application
 
 ### Access Reports
