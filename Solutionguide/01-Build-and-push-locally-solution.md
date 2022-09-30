@@ -1,6 +1,6 @@
 # Challenge 1: Build and push Microservice Images locally
 
-[Previous Challange Solution](./00-Getting-started-solution.md) - **[Home](../README.md)** - [Next Challenge Solution](./01-Build-and-push-locally-solution.md)
+[Previous Challange Solution](./00-Getting-started-solution.md) - **[Home](../README.md)** - [Next Challenge Solution](./02-Azure-Container-Apps-solution.md)
 
 ## Task 1: Clone the FlightBooker Folder from this Repository
 If you are using VS Code make sure you are connected to your gitHub account.
@@ -12,9 +12,9 @@ git remote add [REMOTE_NAME] [GIT_URL]
 git fetch REMOTE_NAME
 git checkout REMOTE_NAME/BRANCH -- path/to/directory
 ```
-You can check if the services run locally on you Computer. Therefor in a terminal direct to the folder of the frontend and run `npm install`. In a second terminal go to the folder of the backend and do the same. After that you should be able to run `npm run dev` on both terminals and open the application in your localhost. 
+You can check if the services run locally on you Computer. Therefor in a terminal direct to the folder of the frontend and run `npm install`. In a second terminal go to the folder of the backend and do the same. After that you should be able to run `npm run dev` on both terminals and open the application in your localhost. Ideally push the Flightbooker into a personal repository as you are going to need it for making changes and using gitHub Actions later.
 
-idk
+
 
 ## Task 2: Create Docker images of the microservices
 
@@ -38,4 +38,3 @@ az acr run --registry $CONTAINER_REGISTRY `
 --cmd '$REGISTRY/$PATH' /dev/null
 ```
 
-## Task 4: Bookings are stored in DB

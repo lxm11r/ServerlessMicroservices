@@ -13,7 +13,7 @@ The challenge will be to setup the basic Azure resources we need to fulfill our 
 
 To have a relateable scenario, we will create a booking system for an airline, where customers can book their seats and receive a bill.
 
-Real world scenarios can include up to hundreds of microservices within an environment. To keep at as simple as possible for this microhack we will only work with three microservices within a single environment. 
+Real world scenarios can include up to hundreds of microservices within an environment. To keep at as simple as possible for this microhack we will only work with two microservices within a single environment. 
 
 Below you can find the architecture diagram of the application we are going to build:
 
@@ -40,7 +40,7 @@ Customers can click on their preferred amount and location of seats and book the
 * Azure Front Door is an application delivery network as a service that offers dynamic site accerleration as well as global load balancing with near real-time failover.
 It also works as a global, scalable entry-point to protect and decouple the inner structure from incoming traffic.
 
-#### Install/Upgrade Azure Container Apps Extension (?)
+#### Install/Upgrade Azure Container Apps Extension
 To be able to work with Azure Container Apps on the azure CLI you want to make sure you have the Container Apps extension installed.
 
 Open your PowerShell or Bash console and sign in to Azure from the CLI.
