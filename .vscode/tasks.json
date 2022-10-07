@@ -8,7 +8,8 @@
 			"dockerBuild": {
 				"dockerfile": "${workspaceFolder}/Flightbooker/flightbooker-frontend/Dockerfile",
 				"context": "${workspaceFolder}/Flightbooker/flightbooker-frontend",
-				"pull": true
+				"pull": true,
+				"tag": "flightbookeracr.azurecr.io/helloworld:latest"
 			},
 			"node": {
 				"package": "${workspaceFolder}/Flightbooker/flightbooker-frontend/package.json"
@@ -39,6 +40,49 @@
 			},
 			"node": {
 				"package": "${workspaceFolder}/Flightbooker/flightbooker-frontend/package.json",
+				"enableDebugging": true
+			}
+		},
+
+		{
+			"type": "docker-build",
+			"label": "docker-build",
+			"platform": "node",
+			"dockerBuild": {
+				"dockerfile": "${workspaceFolder}/Flightbooker/flightbooker-backend/Dockerfile",
+				"context": "${workspaceFolder}/Flightbooker/flightbooker-backend",
+				"pull": true,
+				"tag": "flightbookeracr.azurecr.io/flightbookerbackend:latest"
+			},
+			"node": {
+				"package": "${workspaceFolder}/Flightbooker/flightbooker-backend/package.json"
+			}
+		},
+		{
+			"type": "docker-run",
+			"label": "docker-run: release",
+			"dependsOn": [
+				"docker-build"
+			],
+			"platform": "node",
+			"node": {
+				"package": "${workspaceFolder}/Flightbooker/flightbooker-backend/package.json"
+			}
+		},
+		{
+			"type": "docker-run",
+			"label": "docker-run: debug",
+			"dependsOn": [
+				"docker-build"
+			],
+			"dockerRun": {
+				"env": {
+					"DEBUG": "*",
+					"NODE_ENV": "development"
+				}
+			},
+			"node": {
+				"package": "${workspaceFolder}/Flightbooker/flightbooker-backend/package.json",
 				"enableDebugging": true
 			}
 		}
