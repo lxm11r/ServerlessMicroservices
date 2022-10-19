@@ -9,7 +9,8 @@
             "node": {
                 "package": "${workspaceFolder}/Flightbooker/flightbooker-frontend/package.json",
                 "localRoot": "${workspaceFolder}/Flightbooker/flightbooker-frontend"
-            }
+            },
+            
         }
     ]
 }
