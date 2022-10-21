@@ -27,7 +27,7 @@ jobs:
       - name: Log in to container registry
         uses: docker/login-action@v1
         with:
-          registry: flightbooker.azurecr.io
+          registry: flightbookeracr.azurecr.io
           username: ${{ secrets.FLIGHTBOOKER_REGISTRY_USERNAME }}
           password: ${{ secrets.FLIGHTBOOKER_REGISTRY_PASSWORD }}
 
