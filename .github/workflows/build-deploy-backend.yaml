@@ -36,7 +36,7 @@ jobs:
         with:
           login-server: flightbookeracr.azurecr.io
           username: ${{ secrets.FLIGHTBOOKER_REGISTRY_USERNAME }}
-          password: ${{ secrets.FLIGHTBOOKERREGISTRY_PASSWORD }}
+          password: ${{ secrets.FLIGHTBOOKER_REGISTRY_PASSWORD }}
       - run: |
           docker build . -t flightbookeracr.azurecr.io/flightbookerbackend:${{ github.sha }}
           docker push flightbookeracr.azurecr.io/flightbookerbackend:${{ github.sha }}
