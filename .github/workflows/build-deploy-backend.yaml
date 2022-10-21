@@ -38,6 +38,6 @@ jobs:
           username: ${{ secrets.FLIGHTBOOKER_REGISTRY_USERNAME }}
           password: ${{ secrets.FLIGHTBOOKER_REGISTRY_PASSWORD }}
       - run: |
-          cd cd .\Flightbooker\flightbooker-backend\
+          cd .\Flightbooker\flightbooker-backend\
           docker build . -t flightbookeracr.azurecr.io/flightbookerbackend:${{ github.sha }}
           docker push flightbookeracr.azurecr.io/flightbookerbackend:${{ github.sha }}
