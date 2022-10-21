@@ -36,5 +36,5 @@ jobs:
         with:
           push: true
           tags: flightbookeracr.azurecr.io/flightbookerbackend:${{ github.sha }} , flightbookeracr.azurecr.io/flightbookerbackend:latest
-          file: ./Dockerfile
+          file: ../FlightBooker/flightbooker-backend/Dockerfile
           context: ./.
