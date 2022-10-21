@@ -31,10 +31,12 @@ jobs:
           username: ${{ secrets.FLIGHTBOOKER_REGISTRY_USERNAME }}
           password: ${{ secrets.FLIGHTBOOKER_REGISTRY_PASSWORD }}
 
-      - name: Build and push container image to registry
-        uses: docker/build-push-action@v2
+      - name: 'Build and push image'
+        uses: azure/docker-login@v1
         with:
-          push: true
-          tags: flightbookeracr.azurecr.io/flightbookerbackend:${{ github.sha }} , flightbookeracr.azurecr.io/flightbookerbackend:latest
-          file: Dockerfile
-          context: ./.
+          login-server: flightbookeracr.azurecr.io
+          username: ${{ secrets.FLIGHTBOOKER_REGISTRY_USERNAME }}
+          password: ${{ secrets.FLIGHTBOOKERREGISTRY_PASSWORD }}
+      - run: |
+          docker build . -t flightbookeracr.azurecr.io/flightbookerbackend:${{ github.sha }}
+          docker push flightbookeracr.azurecr.io/flightbookerbackend:${{ github.sha }}
