@@ -29,3 +29,4 @@ az containterapp env create `
   --resource-group $RESOURCE_GROUP`
   --loctation "westeurope"
 ```
+In this example we used $ACR_NAME=flightbookeracr,$RESOURCE_GROUP=ServerlessMicroservices and $ENVIRONMENT=Flightbooker-env but you are free to choose your own names.
