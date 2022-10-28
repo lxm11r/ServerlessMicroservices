@@ -1,6 +1,6 @@
-FROM node:16.10.0
+FROM node:lts-alpine
 WORKDIR /app
-ENV PATH /app/node_modules/.bin:$PATH
+ENV PATH /app/node_modules/.bin:$PATH PATH /app/node_modules/.vite/deps:$PATH
 COPY ["package.json", "package-lock.json*", "npm-shrinkwrap.json*", "./"]
 RUN npm install
 COPY . .
